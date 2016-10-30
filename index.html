@@ -97,12 +97,13 @@
 
                     language = document.createElement('p');
                     $(language).html(project.language)
-                            .attr('data-toggle', "tooltip");
+                            .attr('data-toggle', 'tooltip');
 
                     fork = document.createElement('img')
                     $(fork).addClass('project-icons')
-                            .attr('src', "images/fork.png")
-                            .attr
+                            .attr('src', 'images/fork.png')
+                            .attr('data-toggle' , 'tooltip')
+                            .attr('title', project.language);
 
 
 
