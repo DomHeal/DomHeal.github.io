@@ -801,6 +801,11 @@ footer.entry-meta .meta-in {
 .mini-icons{
   width: 24px;
   height: 24px;
+  opacity: 0.8;
+}
+
+.mini-icons:hover{
+  opacity: 1;
 }
 /* Max page width
 /////////////////////////////////////////////////////////////////////*/
