@@ -1,96 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Dominic Heal - Developer</title>
 
-    <title>Dominic Heal - Portfolio</title>
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
+<body class="home">
 
-<body>
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="mini-header" href="#">DominicHeal.com</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a class="menu-item" href="#">About</a>
-                </li>
-                <li>
-                    <a class="menu-item" id="Projects" href="#">Projects</a>
-                </li>
-                <li>
-                    <a class="menu-item" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<span class="title">Dominic Heal</span>
+			<span class="tagline">A JVM backend developer<br>
+				<a href=""></a></span>
+		</h1>
+	</div>
 
-<!-- Page Content -->
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li id="home" class="active"><a>Home</a></li>
+					<li><a id="about">About</a></li>
+					<li><a id="blog">Blog</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+</main>
+
 <div class="container">
+	<div class="row section topspace">
+		<div class="row section clients topspace">
+			<h2 class="section-title"><span>Leave a Comment</span></h2>
+			<div class="col-lg-12">
+				<p>
+				<div id="disqus_thread"></div>
+				<script>
 
-    <!-- Page Header -->
-    <div class="row">
-        <div class="col-lg-12" id="headerimg">
-            <img src="images/me.png"/>
-            <h2 class="page-header">Dominic Heal</h2>
-        </div>
-    </div>
-    <!-- /.row -->
-    <div id="projectlink"></div>
-
-    <script src="js/githubapi.js"></script>
-
-<footer>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>Copyright &copy; Dominic Heal</p>
-        </div>
-    </div>
-</footer>
+					/**
+					 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+					/*
+					 var disqus_config = function () {
+					 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					 };
+					 */
+					(function() {
+						var d = document, s = d.createElement('script');
+						s.src = '//www-dominicheal-com.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- /.container -->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>Phone Number Currently Unvailable<br>
+						<a href="mailto:#">mail@dominicheal.com</a><br>
+						<br>
+						Cardiff, South Wales, UK
+					</p>	
+				</div>
+			</div>
 
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="http://www.twitter.com/DomHeal"><i class="fa fa-twitter fa-2"></i></a>
+						<a href="https://dribbble.com/DomHeal"><i class="fa fa-dribbble fa-2"></i></a>
+						<a href="http://www.github.com/DomHeal"><i class="fa fa-github fa-2"></i></a>
+						<a href=""><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">About</h3>
+				<div class="widget-body">
+					<p>I am currently Freelancing Software Engineer</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Languages Used:</h3>
+				<div class="widget-body">
+					<img class="mini-icons" src="assets/images/languages/CSharp.png" alt="">
+					<img class="mini-icons" src="assets/images/languages/C.png" alt="">
+					<img class="mini-icons" src="assets/images/languages/Java.png" alt="">
+					<img class="mini-icons" src="assets/images/languages/Haskell.png" alt="">
+					<img class="mini-icons" src="assets/images/languages/typescript.png" alt="">
+					<img class="mini-icons" src="assets/images/languages/Java.jpg" alt="">
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<a href="www.DominicHeal.com">DominicHeal.com</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2016, Dominic Heal<br>
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+<script src="assets/js/load.js">
+
 </script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>
