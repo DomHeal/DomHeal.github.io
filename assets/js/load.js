@@ -7,9 +7,4 @@ $(document).ready(function() {
     $("#home").click(function() {
         $("#main").load('portfolio.html #main');
     });
-
-    $("#about").click(function() {
-        $("#main").load('about.html #main');
-    });
-
 });
